@@ -5,6 +5,7 @@ const { src, dest, series } = require('gulp'),
   rename = require('gulp-rename'),
   imagemin = require('gulp-imagemin'),
   critical = require('critical'),
+  nano = require('gulp-cssnano'),
   del = require('del'),
   pug = require('gulp-pug');
 
@@ -27,6 +28,7 @@ function moveFonts() {
 function buildCss() {
   return src('./src/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(nano())
     .pipe(dest('./dist/css'));
 }
 
