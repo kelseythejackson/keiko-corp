@@ -1,0 +1,208 @@
+doctype html
+html(lang='en-us')
+  head
+    // App Title
+    title Keiko Corp
+    // App Description
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0')
+    link(rel='stylesheet' type='text/css' href='css/main.css')
+  body
+    // Header Section
+    header
+      .container
+        .logo.pull-left.animated.wow.fadeInLeft
+          img.logo-image(src='img/logo.png' alt='' title='')
+        nav.pull-left
+          ul.list-unstyled
+            li.animated.wow.fadeInLeft(data-wow-delay='0s')
+              a(href='#about') About
+            li.animated.wow.fadeInLeft(data-wow-delay='.1s')
+              a(href='#app_features') Features
+            li.animated.wow.fadeInLeft(data-wow-delay='.2s')
+              a(href='#testimonials') Testimonials
+        .social.pull-right
+          ul.list-unstyled
+            li.animated.wow.fadeInRight(data-wow-delay='.2s')
+              a(href='#')
+                img(src='img/facebook.png' alt='' title='')
+            li.animated.wow.fadeInRight(data-wow-delay='.1s')
+              a(href='#')
+                img(src='img/twitter.png' alt='' title='')
+            li.animated.wow.fadeInRight(data-wow-delay='0s')
+              a(href='#')
+                img(src='img/google.png' alt='' title='')
+        span.burger_icon menu
+    // End Header Section
+    // Hero Section
+    section#hero.hero
+      .container
+        .caption
+          h1.text-uppercase.animated.wow.fadeInLeft
+            | Creators of Robofriends and SmartBrain
+          p.enhance.text-lowercase.animated.wow.fadeInLeft
+            | Developers of the future, building for today
+          a.app_store_btn.text-uppercase.animated.wow.fadeInLeft(href='https://github.com/aneagoie/robofriends')
+            i.android_icon
+            span Robofriends
+          a.app_store_btn.text-uppercase.animated.wow.fadeInLeft(href='https://github.com/aneagoie/smart-brain')
+            i.iphone_icon
+            span SmartBrain
+    // End Hero Section
+    // Featured On Section
+    section.featured_on
+      .container
+        ul.list-unstyled.text-center.clearfix
+          li.col-xs-6.col-sm-6.col-md-3.animated.wow.fadeInDown
+            img(src='img/google_logo.png' alt='' title='')
+          li.col-xs-6.col-sm-6.col-md-3.animated.wow.fadeInDown(data-wow-delay='.2s')
+            img(src='img/facebook_logo.png' alt='' title='')
+          li.col-xs-6.col-sm-6.col-md-3.animated.wow.fadeInDown(data-wow-delay='.3s')
+            img(src='img/yahoo_logo.png' alt='' title='')
+          li.col-xs-6.col-sm-6.col-md-3.animated.wow.fadeInDown(data-wow-delay='.4s')
+            img(src='img/paypal_logo.png' alt='' title='')
+    // End Featured On Section
+    // About Section
+    section#about.about
+      .container
+        .row
+          .col-md-6.text-center.animated.wow.fadeInLeft
+            .iphone
+              img(src='img/iphone.png' alt='' titl='')
+          .col-md-6.animated.wow.fadeInRight
+            .features_list
+              h1.text-uppercase The Greatest Products Ever Created
+              p
+                | Seuismod ligula ipsum vulputate tellus quisque dictum tortor at
+                | purus faucibus tincidunt, pellentesque habitant morbi tristique
+                | senectus et netus et malesuada fames ac turpis egestas.
+              ul.list-unstyled
+                li.camera_icon
+                  span Euismod ligula ipsum vulputate tellus.
+                li.video_icon
+                  span Morbi non efficitur nibh sit amet est eros.
+                li.eye_icon
+                  span Fusce faucibus ante liberonec luctus egestas.
+                li.pic_icon
+                  span Quisque pretium malesuada ornare.
+                li.loc_icon
+                  span Cras interdum vestibulum dolor.
+              a#play_video.app_store_btn.text-uppercase(href='#' data-video='https://www.youtube.com/watch?v=sCX_YMPuJGA?autoplay=1&showinfo=0')
+                i.play_icon
+                span About Video
+              a.app_link(href='#hero') Get the app
+      .about_video.show_video
+        a.close_video(href='')
+    // End About Section
+    // App Features Section
+    section#app_features.app_features
+      .container
+        .row.text-center
+          .col-sm-4.col-md-4.details.animated.wow.fadeInDown(data-wow-delay='0s')
+            img(src='img/f_icon1.png' alt='' title='')
+            h1.text-uppercase malesuada fames turpis.
+            p.text-lowercase
+              | vel ultrices mauris libero id diam. Vivamus tellus sagittis
+              | facilisis nisi quis mollis risus quisque ultrices elit.
+          .col-sm-4.col-md-4.details.animated.wow.fadeInDown(data-wow-delay='.1s')
+            img(src='img/f_icon2.png' alt='' title='')
+            h1.text-uppercase malesuada fames turpis.
+            p.text-lowercase
+              | vel ultrices mauris libero id diam. Vivamus tellus sagittis
+              | facilisis nisi quis mollis risus quisque ultrices elit.
+          .col-sm-4.col-md-4.details.animated.wow.fadeInDown(data-wow-delay='.2s')
+            img(src='img/f_icon3.png' alt='' title='')
+            h1.text-uppercase malesuada fames turpis.
+            p.text-lowercase
+              | vel ultrices mauris libero id diam. Vivamus tellus sagittis
+              | facilisis nisi quis mollis risus quisque ultrices elit.
+        .row.text-center
+          .col-sm-4.col-md-4.details.animated.wow.fadeInDown(data-wow-delay='0s')
+            img(src='img/f_icon4.png' alt='' title='')
+            h1.text-uppercase malesuada fames turpis.
+            p.text-lowercase
+              | vel ultrices mauris libero id diam. Vivamus tellus sagittis
+              | facilisis nisi quis mollis risus quisque ultrices elit.
+          .col-sm-4.col-md-4.details.animated.wow.fadeInDown(data-wow-delay='.1s')
+            img(src='img/f_icon5.png' alt='' title='')
+            h1.text-uppercase malesuada fames turpis.
+            p.text-lowercase
+              | vel ultrices mauris libero id diam. Vivamus tellus sagittis
+              | facilisis nisi quis mollis risus quisque ultrices elit.
+          .col-sm-4.col-md-4.details.animated.wow.fadeInDown(data-wow-delay='.2s')
+            img(src='img/f_icon6.png' alt='' title='')
+            h1.text-uppercase malesuada fames turpis.
+            p.text-lowercase
+              | vel ultrices mauris libero id diam. Vivamus tellus sagittis
+              | facilisis nisi quis mollis risus quisque ultrices elit.
+    // And App Features Section
+    // Testimonials Section
+    section#testimonials.testimonials.animated.wow.fadeIn(data-wow-duration='2s')
+      .container
+        .testimonials_list
+          ul#tslider.list-unstyled.text-center.slides.clearfix
+            li
+              blockquote
+                p
+                  | Integer pharetra tellus varius, dictum erat vel, maximus
+                  | tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec
+                  | pulvinar vehicula donec congue tortor eget sem condimentum, ut
+                  | tempor massa porttitor. Praesent tincidunt mi orci in
+                  | sollicitudin mi dapibus dapibus pellentesque habitant morbi
+                  | tristique senectus et malesuada fames turpis egestas.
+                span.author.text-uppercase John Doe
+                span.job Full Stack developer
+            li
+              blockquote
+                p
+                  | Integer pharetra tellus varius, dictum erat vel, maximus
+                  | tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec
+                  | pulvinar vehicula donec congue tortor eget sem condimentum, ut
+                  | tempor massa porttitor. Praesent tincidunt mi orci in
+                  | sollicitudin mi dapibus dapibus pellentesque habitant morbi
+                  | tristique senectus et malesuada fames turpis egestas.
+                span.author.text-uppercase Alex Fredy
+                span.job Javascript developer
+            li
+              blockquote
+                p
+                  | Integer pharetra tellus varius, dictum erat vel, maximus
+                  | tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec
+                  | pulvinar vehicula donec congue tortor eget sem condimentum, ut
+                  | tempor massa porttitor. Praesent tincidunt mi orci in
+                  | sollicitudin mi dapibus dapibus pellentesque habitant morbi
+                  | tristique senectus et malesuada fames turpis egestas.
+                span.author.text-uppercase Sara Aliba
+                span.job Web Designer
+          #slider_nav
+            #prev_arrow
+            #next_arrow
+    // End Testimonials Section
+    // Email Subscription Section
+    section.sub_box
+      p.cta_text.animated.wow.fadeInDown
+        | We're hiring. Join Our company!
+      form#submit_form.animated.wow.fadeIn(action='#' metohd='post' data-wow-duration='2s')
+        input#mc-email(type='email' placeholder='Enter your email')
+        button#mc_submit(type='submit')
+          i.icon
+      #error_msg.message Please Enter A Valid Email.
+      #success_msg.message
+        | Thank You For Your Subscription.
+    // End Email Subscription Section
+    // Footer Section
+    footer
+      ul.list-unstyled.list-inline.app_platform
+        li.animated.wow.fadeInDown(data-wow-delay='0s')
+          a(href='')
+            img(src='img/android_icon.png' alt='' title='')
+        li.animated.wow.fadeInDown(data-wow-delay='.1s')
+          a(href='')
+            img(src='img/ios_icon.png' alt='' title='')
+        li.animated.wow.fadeInDown(data-wow-delay='.2s')
+          a(href='')
+            img(src='img/windows_icon.png' alt='' title='')
+      p.copyright.animated.wow.fadeIn(data-wow-duration='2s')
+        strong Pixelhint
+    // End Footer Section
+    script(type='text/javascript' src='js/scripts.min.js')
