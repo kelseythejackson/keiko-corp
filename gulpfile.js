@@ -4,6 +4,8 @@ const { src, dest, series } = require('gulp'),
   sass = require('gulp-sass'),
   rename = require('gulp-rename'),
   imagemin = require('gulp-imagemin'),
+  critical = require('critical'),
+  del = require('del'),
   pug = require('gulp-pug');
 
 sass.compiler = require('node-sass');
@@ -45,14 +47,39 @@ function buildScript() {
     .pipe(rename('scripts.min.js'))
     .pipe(dest('./dist/js'));
 }
+
+function optimize(cb) {
+  critical.generate({
+    inline: true,
+    base: 'dist/',
+    src: 'index-critical.html',
+    css: ['css/main.css'],
+    target: 'index.html',
+    minify: true,
+    width: 1440,
+    height: 900,
+  });
+  cb();
+}
+const deleteAsset = (file) => {
+  del([file]);
+  return;
+};
+function deleteFromBuild(cb) {
+  deleteAsset('./dist/index-critical.html');
+  cb();
+}
 function defaultTask(cb) {
   cb();
 }
 
+exports.optimize = optimize;
 exports.default = series(
   buildScript,
   buildCss,
   moveFonts,
   optimizeImg,
-  buildHtml
+  buildHtml,
+  optimize,
+  deleteFromBuild
 );
