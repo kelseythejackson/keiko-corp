@@ -57,9 +57,11 @@ function optimize(cb) {
     src: 'index-critical.html',
     css: ['css/main.css'],
     target: 'index.html',
+    dimensions: [
+      { width: 375, height: 667 },
+      { width: 1440, height: 900 },
+    ],
     minify: true,
-    width: 1440,
-    height: 900,
   });
   cb();
 }
